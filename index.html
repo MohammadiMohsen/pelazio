@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelazio</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./styles/style.min.css">
+</head>
+<body>
+    <header class="wrapperHeader">
+  <div class="wrapperHeaderItems">
+      <div class="container">
+        <div class="wrapperLogo">
+            <img class="logo" src="./image/logo.png" alt="logo.png">
+        </div>
+         <div class="wrapperSearchBox">
+           <i class="fal fa-search searchIcon"></i>
+            <input class="searchInput" type="text" value="" placeholder="جستجو کنید">
+        </div>
+        <div class="wrapperLoginAndCardBox">
+            <span class="wrapperSendBox">
+                ارسال به 
+                <img class="flag" src="./image/flag.svg" alt="">
+                <span class="countryName">ایران</span>
+                <i class="fal fa-chevron-down"></i>
+            </span>
+         
+            <div class="wrapperSiteLanguageBox">
+              <span class="langTitle">فارسی</span>
+              <i class="fal fa-chevron-down"></i>
+            </div>
+            <div class="loginOrRegisterButton">
+              <i class="fal fa-user"></i>
+                <span>ورود / ثبت نام</span>
+            </div>
+            <div class="balanceCardBasketButton">
+              <i class="fas fa-shopping-basket"></i>
+            </div>
+        </div>
+      </div>
+      
+  </div>
+  <nav class=" wrapperMainMenu">
+<ul class="container MainMenuList">
+    <li class="MainMenuListItem">
+        <a class="categoryList" href="javascript:void(0);">
+            <i class="fa fa-list"></i>دسته بندی ها <i class="fal fa-chevron-down"></i>
+        </a>
+    </li>
+    <li class="MainMenuListItem">
+        <a class="menuItem" href="javascript:void(0);">
+           بهترین پیشنهادات
+        </a>
+    </li>
+    <li class="MainMenuListItem">
+        <a class="menuItem" href="javascript:void(0);">
+         درخواست خرید از خارج
+        </a>
+    </li>
+    <li class="MainMenuListItem">
+        <a class="menuItem" href="javascript:void(0);">
+          فروش در پلازیو
+        </a>
+    </li>
+</ul>
+  </nav>
+    </header>
+    <main>
+        <div class="container wrapperMainBanners">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="javascript:void(0);"><img class="banner" src="./image/banner1.webp" alt=""> </a>
+                  </div>
+                  <div class="item">
+                    <a href="javascript:void(0);"><img class="banner" src="./image/banner2.webp" alt=""> </a>
+                  </div>
+              </div>
+              <div class="wrapperSideBanner">
+                <img class="banner" src="./image/sideBanner.jpeg" alt="sideBanner.jpeg">
+              </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            rtl:true,
+            loop:true,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:4000,
+            autoplayHoverPause:true,
+            navText: ["<i class='fa fa-chevron-right'></i>","<i class='fa fa-chevron-left'></i>"],
+            responsive:{
+                1000:{
+                    items:1
+                }
+            }
+        })
+      });
+    </script>
+</body>
+</html>
