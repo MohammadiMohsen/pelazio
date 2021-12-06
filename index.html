@@ -16,6 +16,7 @@
   <div class="wrapperHeaderItems">
       <div class="container">
         <div class="wrapperLogo">
+          <span class="menuHamburgerIcon"><i class="fas fa-bars"></i></span>
             <img class="logo" src="./image/logo.png" alt="logo.png">
         </div>
          <div class="wrapperSearchBox">
@@ -34,9 +35,12 @@
               <span class="langTitle">فارسی</span>
               <i class="fal fa-chevron-down"></i>
             </div>
+            <div class="searchBoxMobile">
+              <i class="fal fa-search"></i>
+            </div>
             <div class="loginOrRegisterButton">
               <i class="fal fa-user"></i>
-                <span>ورود / ثبت نام</span>
+                <span class="loginOrRegisterButtonTitle">ورود / ثبت نام</span>
             </div>
             <div class="balanceCardBasketButton">
               <i class="fas fa-shopping-basket"></i>
@@ -72,7 +76,7 @@
     </header>
     <main>
         <div class="container wrapperMainBanners">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" data-id="mainBannersSlider">
                 <div class="item">
                     <a href="javascript:void(0);"><img class="banner" src="./image/banner1.webp" alt=""> </a>
                   </div>
@@ -84,26 +88,243 @@
                 <img class="banner" src="./image/sideBanner.jpeg" alt="sideBanner.jpeg">
               </div>
         </div>
+        <div class="container ">
+          <div class="wrappperProductListCarousel">
+            <div class="wrapperTitleCarousel">
+              <img class="titleCarouselImage" src="./image/firstProductCarousel.png" alt="firstProductCarousel.png">
+              <h4 class="titleCarouselText">تیک تخفیف</h4>
+              <p class="titleCarouselTextDescription">هر روز 10 کالا، ساعت 10 صبح با تخفیف ویژه</p>
+              <a class="showMoreButton" href="javascript:void(0);"> بیشتر <i class="fal fa-chevron-circle-left"></i></a>
+            </div>
+            <div class="productCarousel owl-carousel owl-theme" data-id="productCarousel">
+              <div class="item">
+                  <a class="wrapperProductBox" href="javascript:void(0);">
+                    <div class="productBoxImage">
+                      <img src="image/products/1.jpg" alt="">
+                      <i class="fas fa-truck"></i>
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                    <div class="wrapperPriceProductBox">
+                      <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                      <div class="wrapperPriceBox">
+                        <span class="oldPrice">14،000</span>
+                        <span class="currentPrice">845،000 تومان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              <div class="item">
+                  <a class="wrapperProductBox" href="javascript:void(0);">
+                    <div class="productBoxImage">
+                      <img src="image/products/2.jpg" alt="">
+                      <i class="fas fa-truck"></i>
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                    <div class="wrapperPriceProductBox">
+                      <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                      <div class="wrapperPriceBox">
+                        <span class="oldPrice">14،000</span>
+                        <span class="currentPrice">845،000 تومان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+            
+              <div class="item">
+                  <a class="wrapperProductBox" href="javascript:void(0);">
+                    <div class="productBoxImage">
+                      <img src="image/products/3.jpg" alt="">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                    <div class="wrapperPriceProductBox">
+                      <span class="productBoxDiscount"><i class="fas fa-certificate"></i><div class="percentNumber">12%</div></span>
+                      <div class="wrapperPriceBox">
+                        <span class="oldPrice">14،000</span>
+                        <span class="currentPrice">845،000 تومان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a class="wrapperProductBox" href="javascript:void(0);">
+                    <div class="productBoxImage">
+                      <img src="image/products/1.jpg" alt="">
+                      <i class="fas fa-truck"></i>
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                    <div class="wrapperPriceProductBox">
+                      <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                      <div class="wrapperPriceBox">
+                        <span class="oldPrice">14،000</span>
+                        <span class="currentPrice">845،000 تومان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              <div class="item">
+                  <a class="wrapperProductBox" href="javascript:void(0);">
+                    <div class="productBoxImage">
+                      <img src="image/products/2.jpg" alt="">
+                      <i class="fas fa-truck"></i>
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                    <div class="wrapperPriceProductBox">
+                      <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                      <div class="wrapperPriceBox">
+                        <span class="oldPrice">14،000</span>
+                        <span class="currentPrice">845،000 تومان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+            
+              <div class="item">
+                  <a class="wrapperProductBox" href="javascript:void(0);">
+                    <div class="productBoxImage">
+                      <img src="image/products/3.jpg" alt="">
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                    <div class="wrapperPriceProductBox">
+                      <span class="productBoxDiscount"><i class="fas fa-certificate"></i><div class="percentNumber">12%</div></span>
+                      <div class="wrapperPriceBox">
+                        <span class="oldPrice">14،000</span>
+                        <span class="currentPrice">845،000 تومان</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+               
+            </div>
+          </div>
+         
+         
+        </div>
+        <div class="container">
+          <div class="wrappperProductListCarousel pelazioExpressProductListBox">
+            <div class="wrapperTitleCarousel">
+              <img class="titleCarouselImage" src="./image/express.png" alt="express.png">
+              <h4 class="titleCarouselText">پلازیو اکسپرس</h4>
+              <p class="titleCarouselTextDescription">تحویل فوری 12 ساعته برای تهران و 24 ساعته برای شهرستان‌ها</p>
+              <a class="showMoreButton" href="javascript:void(0);"> بیشتر <i class="fal fa-chevron-circle-left"></i></a>
+            </div>
+            
+          <div class="productCarousel owl-carousel owl-theme" data-id="pelazioExpressProductListBox">
+            <div class="item">
+                <a class="wrapperProductBox" href="javascript:void(0);">
+                  <div class="productBoxImage">
+                    <img src="image/products/1.jpg" alt="">
+                    <i class="fas fa-truck"></i>
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                  <div class="wrapperPriceProductBox">
+                    <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                    <div class="wrapperPriceBox">
+                      <span class="oldPrice">14،000</span>
+                      <span class="currentPrice">845،000 تومان</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <div class="item">
+                <a class="wrapperProductBox" href="javascript:void(0);">
+                  <div class="productBoxImage">
+                    <img src="image/products/2.jpg" alt="">
+                    <i class="fas fa-truck"></i>
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                  <div class="wrapperPriceProductBox">
+                    <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                    <div class="wrapperPriceBox">
+                      <span class="oldPrice">14،000</span>
+                      <span class="currentPrice">845،000 تومان</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+            <div class="item">
+                <a class="wrapperProductBox" href="javascript:void(0);">
+                  <div class="productBoxImage">
+                    <img src="image/products/3.jpg" alt="">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                  <div class="wrapperPriceProductBox">
+                    <span class="productBoxDiscount"><i class="fas fa-certificate"></i><div class="percentNumber">12%</div></span>
+                    <div class="wrapperPriceBox">
+                      <span class="oldPrice">14،000</span>
+                      <span class="currentPrice">845،000 تومان</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a class="wrapperProductBox" href="javascript:void(0);">
+                  <div class="productBoxImage">
+                    <img src="image/products/1.jpg" alt="">
+                    <i class="fas fa-truck"></i>
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                  <div class="wrapperPriceProductBox">
+                    <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                    <div class="wrapperPriceBox">
+                      <span class="oldPrice">14،000</span>
+                      <span class="currentPrice">845،000 تومان</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <div class="item">
+                <a class="wrapperProductBox" href="javascript:void(0);">
+                  <div class="productBoxImage">
+                    <img src="image/products/2.jpg" alt="">
+                    <i class="fas fa-truck"></i>
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                  <div class="wrapperPriceProductBox">
+                    <span class="productBoxDiscount"><i class="fas fa-certificate"></i> <div class="percentNumber">12%</div></span>
+                    <div class="wrapperPriceBox">
+                      <span class="oldPrice">14،000</span>
+                      <span class="currentPrice">845،000 تومان</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          
+            <div class="item">
+                <a class="wrapperProductBox" href="javascript:void(0);">
+                  <div class="productBoxImage">
+                    <img src="image/products/3.jpg" alt="">
+                    <i class="fas fa-shopping-basket"></i>
+                  </div>
+                  <p class="wrapperProductBoxTitle">گرمکن دستی Qu Sheng</p>
+                  <div class="wrapperPriceProductBox">
+                    <span class="productBoxDiscount"><i class="fas fa-certificate"></i><div class="percentNumber">12%</div></span>
+                    <div class="wrapperPriceBox">
+                      <span class="oldPrice">14،000</span>
+                      <span class="currentPrice">845،000 تومان</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+             
+          </div>
+          </div>
+        
+        </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            rtl:true,
-            loop:true,
-            nav:true,
-            autoplay:true,
-            autoplayTimeout:4000,
-            autoplayHoverPause:true,
-            navText: ["<i class='fa fa-chevron-right'></i>","<i class='fa fa-chevron-left'></i>"],
-            responsive:{
-                1000:{
-                    items:1
-                }
-            }
-        })
-      });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
