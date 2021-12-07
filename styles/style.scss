@@ -40,20 +40,32 @@ body {
         min-width: 17.625rem;
         .logo {
           width: 45%;
-          
         }
         @media (min-width: 1200px) and (max-width: 1509.95px) {
           min-width: 11.625rem;
         }
-        @media screen and (max-width: 926px) {
+        @media screen and (max-width: 1199px) {
           min-width: 9.625rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
         }
-        .menuHamburgerIcon{
+        @media screen and (max-width: 320px) {
+          min-width: 7.625rem;
+        }
+        .menuHamburgerIcon {
           font-size: 1.875rem;
           margin-left: 0.938rem;
-          @media screen and (min-width: 926px) {
-            display:none;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          @media screen and (min-width: 1199px) {
+            display: none;
           }
+          @media screen and (min-width: 320px) {
+            font-size: 1.475rem;
+          }
+
         }
       }
 
@@ -90,8 +102,8 @@ body {
           left: 1.125rem;
           font-size: 1.675rem;
         }
-        @media screen and (max-width: 926px) {
-          display:none;
+        @media screen and (max-width: 1199px) {
+          display: none;
         }
       }
       .wrapperLoginAndCardBox {
@@ -125,8 +137,8 @@ body {
             font-weight: 700;
             color: $primary-color !important;
           }
-          @media screen and (max-width: 926px) {
-            display:none;
+          @media screen and (max-width: 1199px) {
+            display: none;
           }
         }
         .wrapperSiteLanguageBox {
@@ -143,8 +155,8 @@ body {
             color: $primary-color !important;
             margin-right: 1.013rem;
           }
-          @media screen and (max-width: 926px) {
-            display:none;
+          @media screen and (max-width: 1199px) {
+            display: none;
           }
         }
         .loginOrRegisterButton {
@@ -162,19 +174,21 @@ body {
           margin: 0 1rem;
           i {
             margin-left: 0.313rem;
-            @media screen and (max-width: 926px) {
+            @media screen and (max-width: 1199px) {
               margin-left: 0;
             }
           }
-          .loginOrRegisterButtonTitle{
-            @media screen and (max-width: 926px) {
-              display:none;
+          .loginOrRegisterButtonTitle {
+            @media screen and (max-width: 1199px) {
+              display: none;
             }
           }
-          @media screen and (max-width: 926px) {
+          @media screen and (max-width: 1199px) {
             padding: 0.838rem 0.913rem;
             min-width: 0;
             justify-content: center;
+            margin: 0 0.4rem;
+            font-size: 1.2rem;
           }
         }
         .balanceCardBasketButton {
@@ -190,12 +204,12 @@ body {
           i {
             color: #19869d;
           }
-          @media screen and (max-width: 926px) {
+          @media screen and (max-width: 1199px) {
             width: 3rem;
-          height: 3rem;
+            height: 3rem;
           }
         }
-        .searchBoxMobile{
+        .searchBoxMobile {
           box-sizing: border-box;
           border-radius: 3.125rem;
           width: 3rem;
@@ -205,12 +219,13 @@ body {
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          @media screen and (min-width: 926px) {
-            display:none;
+          @media screen and (min-width: 1199px) {
+            display: none;
           }
         }
-       
-        
+      }
+      @media screen and (max-width: 1199px) {
+        border-bottom: 1px solid #f3f4f5;
       }
     }
     .wrapperMainMenu {
@@ -255,7 +270,7 @@ body {
         }
       }
       @media screen and (max-width: 926px) {
-       display:none;
+        display: none;
       }
     }
   }
@@ -283,12 +298,17 @@ body {
         .owl-dot {
           margin-right: 0.313rem;
         }
+        @media screen and (max-width: 926px) {
+          bottom: 1.5rem;
+        }
       }
       .owl-nav {
         position: absolute;
         top: 44%;
         width: 100%;
-
+        @media screen and (max-width: 926px) {
+          top: 35%;
+        }
         .owl-prev {
           position: absolute;
           right: 2.438rem;
@@ -304,6 +324,9 @@ body {
           i {
             color: $white-color;
             font-size: 1rem;
+          }
+          @media screen and (max-width: 926px) {
+            right: 0.438rem;
           }
         }
 
@@ -321,6 +344,9 @@ body {
           i {
             color: $white-color;
             font-size: 1rem;
+          }
+          @media screen and (max-width: 926px) {
+            left: 0.438rem;
           }
         }
       }
@@ -361,12 +387,20 @@ body {
           height: 100%;
         }
       }
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
     }
     @media (min-width: 1200px) and (max-width: 1509.95px) {
-     display: grid;
-     grid-template-columns: 55.375rem 24.188rem;
-    grid-column-gap: 1.425rem;
+      display: grid;
+      grid-template-columns: 51.275rem 24.188rem;
+      grid-column-gap: 1.425rem;
     }
+    @media screen and(max-width: 1199px) {
+      display:flex;
+      height: 15rem;
+    }
+   
   }
   .wrappperProductListCarousel {
     display: flex;
@@ -374,26 +408,38 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 0.75rem 0;
-    border-radius:1.238rem;
+    border-radius: 1.238rem;
     padding: 1rem;
-&.pelazioExpressProductListBox{
-  background-color: rgb(29, 36, 122);
-  .titleCarouselText{
-    color:$white-color;
+    &.pelazioExpressProductListBox {
+      background-color: rgb(29, 36, 122);
+      .titleCarouselText {
+        color: $white-color;
+      }
+      .titleCarouselTextDescription {
+        white-space: normal !important;
+        color: $white-color !important;
+      }
+      .wrapperTitleCarousel {
+        max-width: 13rem !important;
+        @media screen and (max-width: 926px) {
+          max-width: 15rem !important;
+          min-width: 15rem;
+        }
 
-  }
-  .titleCarouselTextDescription{
-    white-space: normal !important;
-    color:$white-color !important;
-  }
-  .wrapperTitleCarousel{
-    max-width: 13rem !important;
-  }
-  .showMoreButton{
-    background-color: #d21f27 !important;
+        @media screen and (max-width: 360px) {
+          max-width: 10rem !important;
+          min-width: 10rem;
+        }
+        @media screen and (max-width: 320px) {
+          max-width: 10rem !important;
+          min-width: 10rem;
+        }
 
-  }
-}
+      }
+      .showMoreButton {
+        background-color: #d21f27 !important;
+      }
+    }
     .owl-carousel {
       overflow: hidden;
     }
@@ -522,6 +568,9 @@ body {
         font-size: 1rem;
         line-height: 1.43;
         white-space: nowrap;
+        @media screen and (max-width: 568px) {
+          white-space: normal;
+              }
       }
       .showMoreButton {
         color: $white-color;
@@ -539,6 +588,13 @@ body {
       @media (min-width: 1200px) and (max-width: 1509.95px) {
         width: 14rem;
       }
+      @media screen and (max-width: 360px) {
+        max-width: 10rem !important;
+        min-width: 10rem;
+      }
+       @media screen and (max-width: 320px) {
+        max-width: 10rem;
+            }
     }
     .productCarousel {
       .wrapperProductBox {
@@ -572,7 +628,7 @@ body {
               opacity: 1;
             }
           }
-          .fa-shopping-basket{
+          .fa-shopping-basket {
             opacity: 1;
           }
         }
@@ -608,6 +664,11 @@ body {
           }
           @media (min-width: 1200px) and (max-width: 1509.95px) {
             width: 10.075rem;
+          }
+          img {
+            @media screen and (max-width: 1199px) {
+              width: 100%;
+            }
           }
         }
         .wrapperProductBoxTitle {
@@ -673,19 +734,28 @@ body {
                 font-size: 0.863rem;
               }
             }
-
           }
-          
         }
         @media (min-width: 1200px) and (max-width: 1509.95px) {
           width: 10rem;
-        min-width: 10rem;
-        max-width: 10rem;
-        height:17rem;
-        max-height: 17rem;
-        min-height: 17rem;
+          min-width: 10rem;
+          max-width: 10rem;
+          height: 17rem;
+          max-height: 17rem;
+          min-height: 17rem;
+        }
+        @media screen and (max-width: 1199px) {
+          margin-left: 1.5rem;
         }
       }
+      @media screen and (max-width: 1199px) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+      overflow: scroll;
     }
   }
   .container {
@@ -693,16 +763,14 @@ body {
       max-width: 1920px;
       padding: 0rem 8rem;
     }
-    @media screen and (max-width: 926px) {
-      padding: 0rem 2rem;
-     }
+    @media screen and (max-width: 1199px) {
+      padding: 0rem 1.3rem;
+    }
   }
- 
+
   @media (min-width: 1200px) and (max-width: 1509.95px) {
     .container {
       padding: 0 1.5rem !important;
     }
-    
   }
-
 }

@@ -1,5 +1,5 @@
-$(document).ready(function(){
-
+$(document).ready(function() {
+    var owl = $('[data-id="productCarousel"],[data-id="pelazioExpressProductListBox"]');
     $('[data-id="mainBannersSlider"]').owlCarousel({
         rtl:true,
         loop:true,
@@ -9,11 +9,20 @@ $(document).ready(function(){
         autoplayHoverPause:true,
         navText: ["<i class='fa fa-chevron-right'></i>","<i class='fa fa-chevron-left'></i>"],
         responsive:{
-            1000:{
+            0:{
                 items:1
             }
         }
     });
+    if ( $(window).width() < 1199 ) {
+        owl.removeClass('owl-carousel')
+    } else {
+        startProductCarousel();
+    }
+  });
+  
+  function startProductCarousel() {
+    
     $('[data-id="productCarousel"],[data-id="pelazioExpressProductListBox"]').owlCarousel({
         rtl:true,
         loop:false,
@@ -27,4 +36,6 @@ $(document).ready(function(){
             }
         }
     })
-  });
+      
+  }
+ 
